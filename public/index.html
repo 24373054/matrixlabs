@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatrixLab Exchange - Web3 Innovation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <!-- Section 1: Introduction -->
+        <section class="intro-section" data-section="1">
+            <div class="slide-content">
+                <h1 class="slide-left">MATRIXLAB EXCHANGE</h1>
+                <p class="slide-right">A Revolutionary Web3 Innovation Platform</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Features -->
+        <section class="intro-section" data-section="2">
+            <div class="slide-content">
+                <h2 class="slide-left">INTEGRATED ECOSYSTEM</h2>
+                <p class="slide-right">Wallet • Trading • Quantitative Analysis • Risk Control</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Technology -->
+        <section class="intro-section" data-section="3">
+            <div class="slide-content">
+                <h2 class="slide-left">ADVANCED TECHNOLOGY</h2>
+                <p class="slide-right">Social • Gaming • NFT • DeFi Solutions</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Security -->
+        <section class="intro-section" data-section="4">
+            <div class="slide-content">
+                <h2 class="slide-left">SECURE & TRANSPARENT</h2>
+                <p class="slide-right">Built on Blockchain Technology for Maximum Security</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Login -->
+        <section class="intro-section login-section" data-section="5">
+            <div class="slide-content">
+                <h2 class="slide-left">ENTER THE MATRIX</h2>
+                <div class="login-container slide-right">
+                    <div id="vpn-status" class="status-indicator">
+                        <div class="status-icon"></div>
+                        <span class="status-text">Checking network...</span>
+                    </div>
+                    <button id="connect-wallet" class="connect-btn" disabled>
+                        <span class="btn-icon">🦊</span>
+                        <span class="btn-text">Connect MetaMask</span>
+                    </button>
+                    <p class="login-hint">Secure access via MetaMask wallet</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard-page" class="page">
+        <div class="dashboard-container">
+            <header class="dashboard-header">
+                <div class="logo">
+                    <h1>MATRIXLAB</h1>
+                    <span class="wallet-address" id="wallet-address"></span>
+                </div>
+                <button id="disconnect-btn" class="disconnect-btn">Disconnect</button>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- StableGuard Trading Center -->
+                <div class="dashboard-card">
+                    <div class="card-icon">📊</div>
+                    <h3>StableGuard Trading Center</h3>
+                    <p>Advanced trading platform with real-time analytics</p>
+                    <span class="status-badge">In Development</span>
+                </div>
+
+                <!-- Lab News -->
+                <div class="dashboard-card clickable" onclick="window.open('https://matrixlab.work', '_blank')">
+                    <div class="card-icon">🔬</div>
+                    <h3>Laboratory News & Achievements</h3>
+                    <p>Latest research, innovations, and breakthroughs</p>
+                    <span class="link-arrow">→</span>
+                </div>
+
+                <!-- MatrixLab Website -->
+                <div class="dashboard-card clickable" onclick="window.open('https://matrixlab.work', '_blank')">
+                    <div class="card-icon">🌐</div>
+                    <h3>MatrixLab Official Website</h3>
+                    <p>Explore our laboratory and research initiatives</p>
+                    <span class="link-arrow">→</span>
+                </div>
+
+                <!-- Developer Profile -->
+                <div class="dashboard-card clickable" onclick="window.open('https://24373054.github.io/', '_blank')">
+                    <div class="card-icon">👨‍💻</div>
+                    <h3>Developer Profile</h3>
+                    <p>Meet the creator behind the innovation</p>
+                    <span class="link-arrow">→</span>
+                </div>
+            </div>
+
+            <footer class="dashboard-footer">
+                <p>© 2024 MatrixLab. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
